@@ -1,0 +1,99 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand Column -->
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="../assets/images/logo/lion.jpg" alt="Alex Morgan">
+        </div>
+        <p class="footer-desc">Creative developer & design engineer crafting immersive digital experiences with modern web technologies.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="GitHub"><img src="../assets/images/skills/github.svg" alt="GitHub" width="24"></a>
+          <a href="#" aria-label="LinkedIn"><img src="../assets/images/icons/linkedin.svg" alt="LinkedIn" width="24"></a>
+          <a href="#" aria-label="Instagram"><img src="../assets/images/icons/instagram.svg" alt="Instagram" width="24"></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul class="footer-contact">
+          <li>
+            <img src="../assets/images/icons/arrow.svg" alt="email" width="18">
+            <a href="mailto:alex@morgan.dev">alex@morgan.dev</a>
+          </li>
+          <li>
+            <img src="../assets/images/icons/arrow.svg" alt="phone" width="18">
+            <a href="tel:+14158675309">+1 (415) 867-5309</a>
+          </li>
+          <li>
+            <img src="../assets/images/icons/arrow.svg" alt="location" width="18">
+            <span>San Francisco, CA</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p class="newsletter-text">Get the latest insights & projects straight to your inbox.</p>
+        <form class="newsletter-form" id="footerNewsletter">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit" class="btn-subscribe">Subscribe →</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Alex Morgan. Built with <span class="gradient-text">passion</span> & modern web standards.</p>
+      <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <img src="../assets/images/icons/arrow.svg" alt="↑" width="20">
+      </button>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Simple newsletter form handler (demo)
+  const newsletterForm = document.getElementById('footerNewsletter');
+  if (newsletterForm) {
+    newsletterForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const input = newsletterForm.querySelector('input');
+      if (input.value.trim()) {
+        alert('📬 Thanks for subscribing! (Demo)');
+        input.value = '';
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    });
+  }
+
+  // Back to top button
+  const backBtn = document.getElementById('backToTop');
+  if (backBtn) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backBtn.classList.add('visible');
+      } else {
+        backBtn.classList.remove('visible');
+      }
+    });
+    backBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+</script>
