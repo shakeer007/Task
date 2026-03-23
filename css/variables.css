@@ -42,28 +42,29 @@
   --shadow-glow-lg: 0 0 40px rgba(139, 92, 246, 0.5);
 
   /* Fonts */
-  --font-sans: 'Poppins', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-sans:
+    "Poppins", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype');
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('../assets/fonts/Poppins-Medium.ttf') format('truetype');
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype');
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
